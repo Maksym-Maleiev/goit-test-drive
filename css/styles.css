@@ -2,6 +2,8 @@
   --theme-accent: #ffc700;
   --theme-main: #ffffff;
   --theme-bgd: #222527;
+
+  --theme-modal-bgd: #e5e5e5;
 }
 
 html,
@@ -152,6 +154,11 @@ header {
   width: 100%;
 }
 
+.achivements-icon {
+  width: 60px;
+  height: 60px;
+}
+
 .achivements-item-header {
   font-weight: bold;
   font-size: 16px;
@@ -168,4 +175,181 @@ header {
 
 .achivements-item {
   width: 25%;
+}
+
+.codex {
+  padding: 186px 0;
+  background-image: url("../images/space.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.codex .container {
+  flex-direction: row;
+}
+
+.codex-motto {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 60px;
+  color: var(--theme-accent);
+}
+
+.codex-left-side,
+.codex-right-side {
+  width: 50%;
+}
+
+.codex-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-accent);
+  margin-bottom: 32px;
+}
+
+.codex-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+  margin-bottom: 4px;
+}
+
+.codex-text--last {
+  margin-bottom: 60px;
+}
+
+.footer {
+  padding: 60px 0 66px 0;
+  background-color: var(--theme-bgd);
+}
+
+.footer .container {
+  align-items: center;
+}
+
+.footer-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+  text-align: center;
+  width: 740px;
+  margin-bottom: 54px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-modal-bgd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-form {
+  padding: 40px 80px;
+  background-color: var(--theme-bgd);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-form-title {
+  color: var(--theme-accent);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.modal-form-text {
+  color: var(--theme-main);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.modal-form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.modal-form-field-label {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--theme-main);
+  margin-bottom: 4px;
+}
+
+.modal-form-name,
+.modal-form-email {
+  width: 440px;
+  height: 40px;
+  border: 1px solid var(--theme-main);
+  outline: none;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.modal-form-submit {
+  border: 0;
+  outline: 0;
+  padding: 16px 32px 16px 32px;
+  background-color: var(--theme-accent);
+  border-radius: 38px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-succes {
+  padding: 80px 40px 80px 40px;
+  background-color: var(--theme-bgd);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+
+.modal-succes-title {
+  color: var(--theme-accent);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 112px;
+  text-align: center;
+}
+
+.modal-succes-text {
+  color: var(--theme-main);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 36px;
 }
